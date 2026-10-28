@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Arjun G. Kumar</title>
+  <meta name="description" content="Personal website of Arjun G. Kumar, MS student in Complex Network Analysis at Northeastern University.">
+
+  <style>
+    :root {
+      --paper: #f6f7f9;
+      --ink: #1b2430;
+      --muted: #5b6675;
+      --accent: #2f4b7c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 52rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+
+    .intro {
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .photo {
+      flex: 0 0 11rem;
+      width: 11rem;
+      height: 14rem;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #dfe4ec;
+      position: relative;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: relative;
+      z-index: 1;
+    }
+    /* Shown only if photo.jpg is missing */
+    .photo .initials {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3rem;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(2.25rem, 6vw, 3.25rem);
+      line-height: 1.1;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .bio {
+      margin: 1.5rem 0 0;
+      max-width: 36rem;
+    }
+
+    .contact { margin: 1.5rem 0 0; }
+
+    a { color: var(--accent); }
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    footer {
+      margin-top: 4rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main { padding-top: 2.5rem; }
+      .intro { flex-direction: column; gap: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <div class="intro">
+
+      <!-- Photo: upload a picture named photo.jpg next to this file -->
+      <div class="photo">
+        <div class="initials" aria-hidden="true">AGK</div>
+        <img src="photo.jpg" alt="Portrait of Arjun G. Kumar" onerror="this.style.display='none'">
+      </div>
+
+      <div>
+        <h1>Arjun G. Kumar</h1>
+
+        <p class="role">
+          MS in Complex Network Analysis, Network Science Institute<br>
+          Northeastern University, Boston, MA<br>
+          Graduate Certificate in Computational Social Science<br>
+          College of Social Sciences &amp; Humanities
+        </p>
+
+        <p class="bio">
+          Arjun is a Master&rsquo;s student whose research interests include the use of network science to study voter behavior, sports leagues and markets, and flows of trade, capital, and influence between countries. He’s also a former EMT and ski patroller, and spends as much time as possible outdoors, skiing, hiking, biking, and camping. He has a B.S. in Mathematics from the University of North Dakota and a B.A. in Creative Writing, with a minor in Economics, from Weber State University.
+        </p>
+
+        <p class="contact">
+          <a href="mailto:kumar.a22@northeastern.edu">kumar.a22@northeastern.edu</a>
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      &copy; 2026 Arjun G. Kumar
+    </footer>
+
+  </main>
+</body>
+</html>
